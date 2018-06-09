@@ -1,8 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Script da Arma
 public class Gun : MonoBehaviour
 {
     [SerializeField] private GameObject myBullet;
@@ -18,7 +17,7 @@ public class Gun : MonoBehaviour
             //Rotação do disparo da bala, atualizado
             //newBullet = Instantiate(myBullet, spawnBullet.position, Quaternion.identity);
             newBullet = Instantiate(myBullet, spawnBullet.position, spawnBullet.rotation);
-            Destroy(newBullet, 10f);
+            Destroy(newBullet, 5f);
         }
     }
 }
