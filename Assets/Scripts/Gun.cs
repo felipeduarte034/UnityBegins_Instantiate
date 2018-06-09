@@ -14,7 +14,7 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            //Rotação da arma atualizada
+            //Rotação do disparo da bala, atualizado
             //newBullet = Instantiate(myBullet, spawnBullet.position, Quaternion.identity);
             newBullet = Instantiate(myBullet, spawnBullet.position, spawnBullet.rotation);
             Destroy(newBullet, 5f);
